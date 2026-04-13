@@ -713,8 +713,8 @@
 					>
 						<div class=" self-center flex items-center justify-center size-9">
 							<img
-								src="{WEBUI_BASE_URL}/static/favicon.png"
-								class="sidebar-new-chat-icon size-6 rounded-full group-hover:hidden"
+								src="{WEBUI_BASE_URL}/static/mtslogo.svg"
+								class="sidebar-new-chat-icon h-6 w-auto group-hover:hidden"
 								alt=""
 							/>
 
@@ -908,8 +908,8 @@
 				>
 					<img
 						crossorigin="anonymous"
-						src="{WEBUI_BASE_URL}/static/favicon.png"
-						class="sidebar-new-chat-icon size-6 rounded-full"
+						src="{WEBUI_BASE_URL}/static/mtslogo.svg"
+						class="sidebar-new-chat-icon h-6 w-auto"
 						alt=""
 					/>
 				</a>
@@ -919,7 +919,7 @@
 						id="sidebar-webui-name"
 						class=" self-center font-medium text-gray-850 dark:text-white font-primary"
 					>
-						{$WEBUI_NAME}
+						МТС AI
 					</div>
 				</a>
 				<Tooltip

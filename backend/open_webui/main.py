@@ -2466,15 +2466,15 @@ async def get_manifest_json():
             'background_color': '#343541',
             'icons': [
                 {
-                    'src': '/static/logo.png',
-                    'type': 'image/png',
-                    'sizes': '500x500',
+                    'src': '/static/mtslogo.svg',
+                    'type': 'image/svg+xml',
+                    'sizes': 'any',
                     'purpose': 'any',
                 },
                 {
-                    'src': '/static/logo.png',
-                    'type': 'image/png',
-                    'sizes': '500x500',
+                    'src': '/static/mtslogo.svg',
+                    'type': 'image/svg+xml',
+                    'sizes': 'any',
                     'purpose': 'maskable',
                 },
             ],
@@ -2493,7 +2493,7 @@ async def get_opensearch_xml():
     <ShortName>{app.state.WEBUI_NAME}</ShortName>
     <Description>Search {app.state.WEBUI_NAME}</Description>
     <InputEncoding>UTF-8</InputEncoding>
-    <Image width="16" height="16" type="image/x-icon">{app.state.config.WEBUI_URL}/static/favicon.png</Image>
+    <Image width="16" height="16" type="image/svg+xml">{app.state.config.WEBUI_URL}/static/mtslogo.svg</Image>
     <Url type="text/html" method="get" template="{app.state.config.WEBUI_URL}/?q={'{searchTerms}'}"/>
     <moz:SearchForm>{app.state.config.WEBUI_URL}</moz:SearchForm>
     </OpenSearchDescription>
@@ -2576,7 +2576,7 @@ def swagger_ui_html(*args, **kwargs):
         **kwargs,
         swagger_js_url='/static/swagger-ui/swagger-ui-bundle.js',
         swagger_css_url='/static/swagger-ui/swagger-ui.css',
-        swagger_favicon_url='/static/swagger-ui/favicon.png',
+        swagger_favicon_url='/static/mtslogo.svg',
     )
 
 

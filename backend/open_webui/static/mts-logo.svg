@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">MTS Logo</title>
+<desc id="desc">Red rounded square with white ellipse and MTS label</desc>
+<rect x="24" y="24" width="136" height="136" rx="28" fill="#E30613"/>
+<ellipse cx="92" cy="92" rx="30" ry="22" fill="#FFFFFF"/>
+<text x="174" y="114" font-family="Archivo, Arial, sans-serif" font-size="58" font-weight="700" fill="#E30613">MTS</text>
+</svg>

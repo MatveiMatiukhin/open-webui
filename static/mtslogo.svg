@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" role="img" aria-labelledby="title desc">
+  <title id="title">MTS AI Logo</title>
+  <desc id="desc">Transparent logo with red square MTC mark and white AI text</desc>
+  <rect x="24" y="24" width="220" height="220" rx="12" fill="#E30613"/>
+  <text x="56" y="92" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">M</text>
+  <text x="176" y="92" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">T</text>
+  <text x="174" y="222" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">C</text>
+  <text x="300" y="170" font-family="Arial, Helvetica, sans-serif" font-size="126" font-weight="700" fill="#FFFFFF">AI</text>
+</svg>

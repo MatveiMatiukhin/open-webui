@@ -1,0 +1,93 @@
+:root {
+	--mts-red: #e30613;
+	--mts-red-hover: #c90411;
+	--mts-red-soft: #ffe9ec;
+	--mts-red-soft-dark: rgba(227, 6, 19, 0.16);
+}
+
+html,
+body {
+	accent-color: var(--mts-red);
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--mts-red);
+	box-shadow: 0 0 10px rgba(227, 6, 19, 0.4);
+	z-index: 9999;
+	pointer-events: none;
+}
+
+::selection {
+	background: rgba(227, 6, 19, 0.22);
+}
+
+#sidebar-webui-name {
+	color: var(--mts-red) !important;
+}
+
+#sidebar-new-chat-button {
+	background: var(--mts-red-soft);
+}
+
+#sidebar-new-chat-button:hover {
+	background: #ffd5da !important;
+}
+
+html.dark #sidebar-new-chat-button {
+	background: var(--mts-red-soft-dark);
+}
+
+html.dark #sidebar-new-chat-button:hover {
+	background: rgba(227, 6, 19, 0.24) !important;
+}
+
+#auth-page #auth-container button[type='submit'] {
+	background: var(--mts-red) !important;
+	color: #fff !important;
+}
+
+#auth-page #auth-container button[type='submit']:hover {
+	background: var(--mts-red-hover) !important;
+}
+
+#auth-page #auth-container a,
+#auth-page #auth-container button.font-medium.underline {
+	color: var(--mts-red);
+}
+
+#mts-greeting-panel {
+	position: relative;
+	border-radius: 1.25rem;
+	padding: 0.6rem 1rem;
+	background: rgba(227, 6, 19, 0.04);
+	box-shadow: 0 10px 30px rgba(227, 6, 19, 0.14);
+}
+
+html.dark #mts-greeting-panel {
+	background: rgba(227, 6, 19, 0.08);
+	box-shadow: 0 12px 34px rgba(227, 6, 19, 0.2);
+}
+
+#message-input-container {
+	box-shadow:
+		0 0 0 1px rgba(227, 6, 19, 0.08),
+		0 12px 32px rgba(227, 6, 19, 0.15) !important;
+}
+
+html.dark #message-input-container {
+	box-shadow:
+		0 0 0 1px rgba(227, 6, 19, 0.12),
+		0 14px 36px rgba(227, 6, 19, 0.2) !important;
+}
+
+#message-input-container:focus-within {
+	box-shadow:
+		0 0 0 1px rgba(227, 6, 19, 0.18),
+		0 14px 40px rgba(227, 6, 19, 0.24) !important;
+}

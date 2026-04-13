@@ -144,22 +144,22 @@
 
 	async function setLogoImage() {
 		await tick();
-		const logo = document.getElementById('logo');
+		const logo = document.getElementById('logo') as HTMLImageElement | null;
 
 		if (logo) {
 			const isDarkMode = document.documentElement.classList.contains('dark');
 
 			if (isDarkMode) {
 				const darkImage = new Image();
-				darkImage.src = `${WEBUI_BASE_URL}/static/favicon-dark.png`;
+				darkImage.src = `${WEBUI_BASE_URL}/static/mtslogo.svg`;
 
 				darkImage.onload = () => {
-					logo.src = `${WEBUI_BASE_URL}/static/favicon-dark.png`;
-					logo.style.filter = ''; // Ensure no inversion is applied if favicon-dark.png exists
+					logo.src = `${WEBUI_BASE_URL}/static/mtslogo.svg`;
+					logo.style.filter = '';
 				};
 
 				darkImage.onerror = () => {
-					logo.style.filter = 'invert(1)'; // Invert image if favicon-dark.png is missing
+					logo.style.filter = '';
 				};
 			}
 		}
@@ -241,8 +241,8 @@
 									<img
 										id="logo"
 										crossorigin="anonymous"
-										src="{WEBUI_BASE_URL}/static/favicon.png"
-										class="size-24 rounded-full"
+										src="{WEBUI_BASE_URL}/static/mtslogo.svg"
+										class="h-24 w-auto"
 										alt="{$WEBUI_NAME} logo"
 									/>
 								</div>
@@ -593,8 +593,8 @@
 						<img
 							id="logo"
 							crossorigin="anonymous"
-							src="{WEBUI_BASE_URL}/static/favicon.png"
-							class=" w-6 rounded-full"
+							src="{WEBUI_BASE_URL}/static/mtslogo.svg"
+							class="h-6 w-auto"
 							alt=""
 						/>
 					</div>
